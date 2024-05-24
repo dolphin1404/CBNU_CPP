@@ -3,20 +3,18 @@
 using namespace std;
 
 class Circle {
-  public:
+ public:
   int r;
-  string name;
 };
 
 class NamedCircle : public Circle {
  public:
-  NamedCircle(int a, string n){
+  string name;
+  NamedCircle(int a, string n) {
     this->r = a;
     this->name = n;
   }
-  void show() {
-    cout << "반지름이 " << r << "인 " << name;
-  }
+  void show() { cout << "반지름이 " << r << "인 " << name; }
 };
 
 int main() {
